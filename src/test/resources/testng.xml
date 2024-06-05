@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite" verbose="1" parallel="tests" thread-count="5">
+    <test name="MyTest">
+        <classes>
+            <class name="demo.TestCases"></class>
+                <methods>
+                    <include name="openBrowser"/>
+                    <include name="washingMachineRatings"/>
+                    <include name="iphoneDiscounts"/>
+                    <include name="coffeeMugs"/>
+                </methods>
+        </classes>
+    </test>
+</suite>
